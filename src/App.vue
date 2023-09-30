@@ -7,5 +7,4 @@
 <script setup>
 import { ref } from 'vue';
 const layout = ref('div');
-console.log(layout);
 </script>

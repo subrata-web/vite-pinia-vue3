@@ -2,6 +2,7 @@ import { createApp, markRaw } from 'vue';
 import 'material-icons/iconfont/material-icons.css';
 import { createPinia } from 'pinia';
 import App from './App.vue';
+import './index.css';
 import router from './router';
 
 const app = createApp(App);
