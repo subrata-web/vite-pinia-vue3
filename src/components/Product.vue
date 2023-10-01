@@ -31,7 +31,7 @@
 </template>
 
 <script setup>
-import { toRefs, defineProps } from 'vue';
+import { toRefs } from 'vue';
 import { useCartStore } from '../stores/Cart';
 
 const cartStore = useCartStore();
@@ -40,7 +40,6 @@ const props = defineProps({
 });
 const { product } = toRefs(props);
 const addToCart = (product) => {
-  console.log(product);
   cartStore.addToCart(product);
 };
 </script>

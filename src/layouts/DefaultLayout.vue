@@ -72,11 +72,13 @@
   </div>
 </template>
 <script setup>
+import { useRouter } from 'vue-router';
 import { useAthStore } from '../stores/Auth';
 import { useCartStore } from '../stores/Cart';
 
+const router = useRouter();
 const cartStore = useCartStore();
 const authStore = useAthStore();
 const logout = () => authStore.logout();
-const goTo = () => false;
+const goTo = () => router.push({ name: 'Cart' });
 </script>

@@ -24,6 +24,14 @@ const Routes = [
     },
   },
   {
+    path: '/cart',
+    name: 'Cart',
+    component: () => import('../pages/Cart/index.vue'),
+    meta: {
+      requireAuth: true,
+    },
+  },
+  {
     path: '/login',
     name: 'Login',
     component: () => import('../pages/Login/index.vue'),
