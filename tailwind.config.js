@@ -54,6 +54,10 @@ export default {
           'Noto Color Emoji',
         ],
       },
+      container: {
+        center: true,
+        padding: '1rem',
+      },
     },
   },
   variants: {

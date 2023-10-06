@@ -1,5 +1,7 @@
 <template>
-  <div>This is home page</div>
+  <div>
+    <div class="container mx-auto bg-sky-300">test</div>
+  </div>
 </template>
 
 <script setup>
